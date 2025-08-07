@@ -12,3 +12,7 @@ body {
     font-weight: bold;
     margin-bottom: 1rem;
 }
+
+.text-primary {
+    color: #1a90ff;
+}
