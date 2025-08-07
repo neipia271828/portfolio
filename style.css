@@ -16,3 +16,7 @@ body {
 .text-primary {
     color: #1a90ff;
 }
+
+.text-gray {
+    color: gray;
+}
