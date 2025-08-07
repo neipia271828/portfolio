@@ -20,3 +20,10 @@ body {
 .text-gray {
     color: gray;
 }
+
+h2 {
+    text-decoration: underline;
+    text-decoration-color: #1e90ff;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
