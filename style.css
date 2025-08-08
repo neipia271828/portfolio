@@ -37,11 +37,11 @@ form {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-from div {
-    margin-botton: 1rem;
+form div {
+    margin-bottom: 1rem;
 }
 
-from label {
+form label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
