@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: skyblue;
     font-family: "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
@@ -7,6 +11,14 @@ body {
     color: #fff;
 }
 
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover;
+}
 #main-title {
     font-size: 48px;
     font-weight: bold;
@@ -26,6 +38,16 @@ h2 {
     text-decoration-color: #1e90ff;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #1a90ff;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 form {
@@ -71,6 +93,39 @@ form button[type="submit"]:hover {
     background-color: #1c86ee;
 }
 
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    margin-top: 0.75rem;
+}
+
+.btn-buy:hobver {
+    background-color: #1c86ee;
+}
+
 @media (max-width: 600px) {
     form {
         max-width: 100%;
@@ -79,7 +134,7 @@ form button[type="submit"]:hover {
 
     form input,
     form textarea {
-        width: 100%;
+        width: 95%;
     }
 
     form button[type="submit"] {
@@ -102,4 +157,16 @@ form button[type="submit"]:hover {
 
 .skip-link:focus {
     top: 0;
+}
+
+@media (max-width: 767px) {
+    .card-container {
+        flex-direction: colum;
+    }
+    .card {
+        width: 100%;
+    }
+    #main-title {
+        font-size: 32px;
+    }
 }
