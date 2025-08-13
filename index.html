@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
         rel="stylesheet"
     >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -27,6 +28,7 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#about">自己紹介</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills">スキル</a></li>
+                <li class="nav-item"><a class="nav-link" href="#history">経歴</a></li>
                 <li class="nav-item"><a class="nav-link" href="#products">作品紹介</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">お問い合わせ</a></li>
             </ul>
@@ -35,107 +37,173 @@
         </nav>
     </header>
     <main role="main" id="main-content">
-        <section>
-            <h2>自己紹介</h2>
-            <img src="https://picsum.photos/200" alt="プロフィール画像" class="profile-img">
-            <div class="self-intro">
-                <p class="text-gray">はじめまして。私はPai314です。現在Web開発の練習のため<br>html/css/javascriptを用いたポートフォリオサイトを作成しています。</p>
+        <div class="container my-4">
+            <div class="row g-4">
+                <aside class="col-12 col-md-3">
+                    <nav class="list-group">
+                        <a href="#about" class="list-group-item list-group-item-action">自己紹介</a>
+                        <a href="#skills" class="list-group-item list-group-item-action">スキル</a>
+                        <a href="#history" class="list-group-item list-group-item-action">経歴</a>
+                        <a href="#products" class="list-group-item list-group-item-action">商品紹介</a>
+                        <a href="#contact" class="list-group-item list-group-item-action">お問い合わせ</a>
+                    </nav>
+                </aside>
+
+                <section class="col-12 col-md-9">
+                    <section id="about">
+                        <h2>自己紹介</h2>
+                        <img src="images/円周率.png" alt="プロフィール画像" class="profile-img">
+                        <div class="self-intro">
+                            <p class="text-gray">はじめまして。私はPai314です。現在Web開発の練習のため<br>html/css/javascriptを用いたポートフォリオサイトを作成しています。</p>
+                        </div>
+                    </section>
+                    <section id="skills">
+                        <h2>スキル</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                        <h2>趣味</h2>
+                        <ol>
+                            <li>読書</li>
+                            <li>音楽鑑賞</li>
+                            <li>プログラミング</li>
+                        </ol>
+                    </section>
+                    <section id="history">
+                        <h2>経歴</h2>
+                        <table class="text-gray">
+                            <thead>
+                                <tr>
+                                    <th scope="col">年</th>
+                                    <th scope="col">出来事</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">2009年</th>
+                                    <td>爆誕</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2016年</th>
+                                    <td>小学校入学</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2025年</th>
+                                    <td>高専入学</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">同年8月</th>
+                                    <td>TimeQuest制作開始!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section id="products">
+                        <h2>作品紹介</h2>
+
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://picsum.photos/seed/a/600/400" class="card-img-top" alt="作品A">
+                                    <div class="card-body">
+                                        <h5 class="card-title">作品A</h5>
+                                        <p class="card-text">説明</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <button class="btn btn-primary w-100">購入</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://picsum.photos/seed/a/600/400" class="card-img-top" alt="作品B">
+                                    <div class="card-body">
+                                        <h5 class="card-title">作品B</h5>
+                                        <p class="card-text">説明</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <button class="btn btn-primary w-100">購入</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://picsum.photos/seed/a/600/400" class="card-img-top" alt="作品C">
+                                    <div class="card-body">
+                                        <h5 class="card-title">作品C</h5>
+                                        <p class="card-text">説明</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <button class="btn btn-primary w-100">購入</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://picsum.photos/seed/a/600/400" class="card-img-top" alt="作品D">
+                                    <div class="card-body">
+                                        <h5 class="card-title">作品D</h5>
+                                        <p class="card-text">説明</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <button class="btn btn-primary w-100">購入</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://picsum.photos/seed/a/600/400" class="card-img-top" alt="作品E">
+                                    <div class="card-body">
+                                        <h5 class="card-title">作品E</h5>
+                                        <p class="card-text">説明</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <button class="btn btn-primary w-100">購入</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://picsum.photos/seed/a/600/400" class="card-img-top" alt="作品E">
+                                    <div class="card-body">
+                                        <h5 class="card-title">作品E</h5>
+                                        <p class="card-text">説明</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <button class="btn btn-primary w-100">購入</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="contact">
+                        <h2>お問い合わせ</h2>
+                        <form action="#" method="POST">
+                            <div>
+                                <label for="name">お名前:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div>
+                                <label for="email">メールアドレス:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div>
+                                <label for="message">メッセージ</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit">送信</button>
+                        </form>
+                    </section>
+                </section>
             </div>
-        </section>
-        <section>
-            <h2>スキル</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-            </ul>
-        </section>
-        <section>
-            <h2>趣味</h2>
-            <ol>
-                <li>読書</li>
-                <li>音楽鑑賞</li>
-                <li>プログラミング</li>
-            </ol>
-        </section>
-        <section>
-            <p>
-                <a href="https://github.com/neipia271828/" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
-            </p>
-        </section>
-        <section>
-            <h2>経歴</h2>
-            <table class="text-gray">
-                <caption>主な経歴</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">年</th>
-                        <th scope="col">出来事</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td scope="row">2009年</td>
-                        <td>爆誕</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">2016年</td>
-                        <td>小学校入学</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">2025年</td>
-                        <td>高専入学</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">同年8月</td>
-                        <td>TimeQuest制作開始!</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section id="products">
-            <h2>作品紹介</h2>
-            <div class="card-container">
-                <div class="card">
-                    <img src="https://" alt="作品A">
-                    <h3>作品A</h3>
-                    <p>説明</p>
-                    <a href="#" class="btn-buy">購入</a>
-                </div>
-                <div class="card">
-                    <img src="https://" alt="作品B">
-                    <h3>作品B</h3>
-                    <p>説明</p>
-                    <a href="#" class="btn-buy">購入</a>
-                </div>
-                <div class="card">
-                    <img src="https://" alt="作品C">
-                    <h3>作品C</h3>
-                    <p>説明</p>
-                    <a href="#" class="btn-buy">購入</a>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>お問い合わせ</h2>
-            <form action="#" method="POST">
-                <div>
-                    <label for="name">お名前:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label for="email">メールアドレス:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="message">メッセージ</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit">送信</button>
-            </form>
-        </section>
+        </div>
     </main>
     <footer role="contentinfo">
         <p>&copy; 2025 Pai314</p>

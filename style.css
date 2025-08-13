@@ -113,6 +113,7 @@ img {
     display: block;
 }
 
+/*
 .card-container {
     display: flex;
     justify-content: space-around;
@@ -144,6 +145,7 @@ img {
 .btn-buy:hover {
     background-color: #1c86ee;
 }
+*/
 
 @media (max-width: 600px) {
     form {
@@ -188,4 +190,8 @@ img {
     #main-title {
         font-size: 32px;
     }
+}
+
+section {
+    padding: 1rem;
 }
