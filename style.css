@@ -184,9 +184,7 @@ img {
     .card-container {
         flex-direction: column;
     }
-    .card {
-        width: 100%;
-    }
+
     #main-title {
         font-size: 32px;
     }
